@@ -1,0 +1,313 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #161269;
+  line-height: 1.6;
+  padding: 20px; 
+ 
+  
+}
+
+
+
+header {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
+  color: #161269;
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+nav {
+  margin-top: 10px;
+  
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #d3bd3f;
+  font-weight: 500;
+}
+
+nav a:hover {
+  font-weight: bold;
+   color: #f39c12; /* warm orange glow */
+  transition: color 0.3s;
+}
+
+
+.intro {
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #888;
+}
+
+
+ .hero-image::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('img.flower.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(14px);
+  z-index: -1;
+  opacity: 0.9;
+  pointer-events: none; /* Makes sure background doesn't interfere with clicks */
+}
+
+.footer{
+    color:#d3bd3f;
+}
+body.stories-body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #fef6ff, #e8f0ff);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.page-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
+  color: #161269;
+  text-align: center;
+   margin-top: 20px;
+  background-color: #d3bd3f;
+  border-radius: 10px;
+}
+
+.nav {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #d3bd3f;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #f39c12;
+  font-weight: bold;
+  transition: color 0.3;
+}
+
+.story-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.story-card {
+  background-color: #ffffffdd;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.story-title {
+  font-size: 1.8rem;
+  color: #161269;
+  font-family: 'Great vibes',cursive;
+  margin-bottom: 10px;
+  
+}
+
+.story-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.footer1 {
+  text-align: center;
+  padding: 20px;
+  background-color: #f5e4af;
+  color: #6a0dad;
+  font-style: italic;
+}
+.poem-line::before {
+  content: "✧ ";
+  color: #ff69b4;
+}
+.story-card:hover {
+  transform: scale(1.01);
+  background-color: #fff7fc;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+.poem-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+.nav-button{
+  text-align: center;
+}
+.photo-link {
+  text-decoration: none;
+  background-color: #6a1b9a;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  
+}
+
+.photo-link:hover {
+  background-color: #4a0c6b;
+}
+.photo-header {
+  background-color: #ffdbe7;
+  text-align: center;
+  padding: 1.5rem;
+  border-bottom: 2px solid #ffcee0;
+}
+
+.photo-title {
+  font-size: 2.5rem;
+  font-family: 'Cedarville Cursive', cursive;
+  color: #d81b60;
+  margin: 0;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.photo-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.photo-card img:hover {
+  transform: scale(1.03);
+}
+/* Lightbox overlay styles */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.lightbox-overlay.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.lightbox-overlay:after {
+  content: '✖';
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+body {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .hero-title, .photo-title {
+    font-size: 1.8rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  .photo-gallery {
+    grid-template-columns: 1fr; /* 1 column for smaller screens */
+  }
+
+  .poem-step {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .hero-image::before {
+    background-position: top center;
+    background-attachment: scroll; /* improves performance */
+    filter: blur(10px); /* slightly less blur on small screens */
+  }
+
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+ 
+
+
+
+

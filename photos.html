@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Photos</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<script>
+  document.querySelectorAll('.lightbox').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const src = this.getAttribute('href');
+      const overlay = document.createElement('div');
+      overlay.className = 'lightbox-overlay show';
+      overlay.innerHTML = `<img src="${src}" alt=""><div class="close-lightbox"></div>`;
+      document.body.appendChild(overlay);
+
+      overlay.addEventListener('click', () => {
+        overlay.classList.remove('show');
+        setTimeout(() => overlay.remove(), 300);
+      });
+    });
+  });
+</script>
+
+<body>
+  <header class="photo-header">
+    <h1 class="photo-title">Captured Moments ✧</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="stories.html">Stories</a>
+    </nav>
+  </header>
+
+  <main class="photo-gallery">
+    <div class="photo-card">
+      <a href="images/img46.jpg" class="lightbox">
+        <img src="images/img46.jpg" alt="Memory 1" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href= "images/img47.jpg"class="lightbox">
+        <img src="images/img47.jpg" alt="Memory 2" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img48.jpg"class="lightbox">
+        <img src="images/img48.jpg" alt="Memory 3" />
+      </a>
+    </div>
+     <div class="photo-card">
+      <a href="images/img49.jpg" class="lightbox">
+        <img src="images/img49.jpg" alt="Memory 3" />
+      </a>
+    </div> 
+    <div class="photo-card">
+      <a href="images/img50.jpg" class="lightbox">
+        <img src="images/img50.jpg" alt="Memory 3" />
+      </a>
+    </div>
+     <div class="photo-card">
+      <a href="images/img51.jpg"  class="lightbox">
+        <img src="images/img51.jpg" alt="Memory 3" />
+      </a>
+    </div>
+     <div class="photo-card">
+      <a href="images/img52.jpg"class="lightbox">
+        <img src="images/img52.jpg" alt="Memory 3" />
+      </a>
+    </div>
+     <div class="photo-card">
+      <a href="images/img53.jpg" class="lightbox">
+        <img src="images/img53.jpg" alt="Memory 3" />
+      </a>
+    </div>
+     <div class="photo-card">
+      <a href="images/img54.jpg" class="lightbox">
+        <img src="images/img54.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img55.jpg"class="lightbox">
+        <img src="images/img55.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img56.jpg"class="lightbox">
+        <img src="images/img56.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img57.jpg" class="lightbox">
+        <img src="images/img57.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img58.jpg"  class="lightbox">
+        <img src="images/img58.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img59.jpg" class="lightbox">
+         <img src="images/img59.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img60.jpg" class="lightbox">
+        <img src="images/img60.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img61.jpg"class="lightbox">
+        <img src="images/img61.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img62.jpg" class="lightbox">
+        <img src="images/img62.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img63.jpg"class="lightbox">
+        <img src="images/img63.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img64.jpg"class="lightbox">
+        <img src="images/img64.jpg" alt="Memory 3" />
+      </a>
+    </div><br>
+    <div class="photo-card">
+      <a href="images/img1.jpg"class="lightbox">
+        <img src="images/img1.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img2.jpg" class="lightbox">
+         <img src="images/img2.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img3.jpg" class="lightbox">
+        <img src="images/img3.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img32.jpg" class="lightbox">
+        <img src="images/img32.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img34.jpg"  class="lightbox">
+        <img src="images/img34.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img44.jpg" class="lightbox">
+        <img src="images/img44.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img43.jpg"class="lightbox">
+        <img src="images/img43.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img42.jpg" class="lightbox">
+        <img src="images/img42.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img41.jpg"class="lightbox">
+        <img src="images/img41.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img8.jpg"  class="lightbox">
+        <img src="images/img8.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img9.jpg"class="lightbox">
+        <img src="images/img9.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img18.jpg"class="lightbox">
+        <img src="images/img18.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img19.jpg" class="lightbox">
+        <img src="images/img19.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img20.jpg"  class="lightbox">
+        <img src="images/img20.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img21.jpg" class="lightbox">
+        <img src="images/img21.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img4.jpg"class="lightbox">
+        <img src="images/img4.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img5.jpg" class="lightbox">
+        <img src="images/img5.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img6.jpg"class="lightbox">
+        <img src="images/img6.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img10.jpg"  class="lightbox">
+        <img src="images/img10.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img11.jpg"  class="lightbox">
+        <img src="images/img11.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img12.jpg" class="lightbox">
+        <img src="images/img12.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img13.jpg"  class="lightbox">
+        <img src="images/img13.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img14.jpg" class="lightbox">
+        <img src="images/img14.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img15.jpg" class="lightbox">
+        <img src="images/img15.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img16.jpg" class="lightbox">
+         <img src="images/img16.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img17.jpg" class="lightbox">
+        <img src="images/img17.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img22.jpg"class="lightbox">
+        <img src="images/img22.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img23.jpg"  class="lightbox">
+        <img src="images/img23.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img24.jpg" class="lightbox">
+        <img src="images/img24.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img25.jpg"  class="lightbox">
+        <img src="images/img25.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img26.jpg"class="lightbox">
+        <img src="images/img26.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img27.jpg" class="lightbox">
+        <img src="images/img27.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img28.jpg"  class="lightbox">
+        <img src="images/img28.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img29.jpg"class="lightbox">
+        <img src="images/img29.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href=="images/img30.jpg"class="lightbox">
+        <img src="images/img30.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img33.jpg" class="lightbox">
+        <img src="images/img33.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img35.jpg" class="lightbox">
+        <img src="images/img35.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img37.jpg"  class="lightbox">
+          <img src="images/img37.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img38.jpg" class="lightbox">
+        <img src="images/img38.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img39.jpg"  class="lightbox">
+        <img src="images/img39.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href= "images/img40.jpg" class="lightbox">
+         <img src="images/img40.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img36.jpg" class="lightbox">
+         <img src="images/img36.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img45.jpg"  class="lightbox">
+        <img src="images/img45.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img7.jpg" class="lightbox">
+        <img src="images/img7.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img31.jpg"class="lightbox">
+        <img src="images/img31.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img65.jpg"class="lightbox">
+        <img src="images/img65.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img66.jpg"class="lightbox">
+        <img src="images/img66.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    <div class="photo-card">
+      <a href="images/img67.jpg"class="lightbox">
+        <img src="images/img67.jpg" alt="Memory 3" />
+      </a>
+    </div>
+    
+
+
+
+    
+    
+    <!-- Add more photo-card divs for more images -->
+  </main>
+</body>
+</html>
